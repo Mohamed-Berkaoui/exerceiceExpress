@@ -1,0 +1,55 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+background-color: aqua;
+}
+
+nav div{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0 50px;
+    width: 80%;
+}
+
+.add{
+    width: 50%;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.365);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.add button{
+    width: 150px;
+    height: 40px;
+    background-color: aqua;
+    border: none;
+
+}
+
+.add input{
+    width: 80%;
+    height: 50px;
+}

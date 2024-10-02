@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./parts/navbar.ejs') %>
+<div class="container">
+    <% todos.forEach(element => { %>
+        <div class="box" >
+            <h2><%= element.task %></h2>
+            <p><%= element.status?"done":"pending" %></p>
+         <form action="/update" method="post">   <button type="submit">edit</button>
+        <input type="hidden" value="<%= element._id %>" name="id"></form>
+        </div>
+    
+    <% }) %>
+</div>
+</body>
+</html>
